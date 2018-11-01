@@ -1,0 +1,25 @@
+1. user --> server
+    * login / logoff
+    * status
+
+2. server --> user
+    * online / offline
+
+3. user --> user
+    * direct messages
+    * broadcast messages / group messaging (topics)
+
+COMMANDS:
+
+    login <user> <password>
+    logoff
+
+    msg <user> msgBody
+    "msg jim Hello World!" <--- sent
+    in jim: "msg from <user_who_has_sent> Hello World!" <--- recieved
+
+    #topic <--- chatroom
+    join #topic
+    remove #topic
+    msg #topic msgBody
+    "msg from login in #topic:login msgBody" <---recieved
